@@ -159,12 +159,3 @@ fetch("http://localhost:3000/alunos")
   .then((response) => response.json())
   .then((data) => console.log(data));
 ```
-
----
-
-# 👨‍💻 Author
-
-Henrique Tamashiro
-
-LinkedIn: https://linkedin.com/in/henrique-tamashiro\
-GitHub: https://github.com/HenriqueTamashiro
