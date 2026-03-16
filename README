@@ -1,24 +1,47 @@
-# 🎓 API REST de Alunos
+# 🎓 API REST - Alunos
 
-API REST desenvolvida com **Node.js** e **Express** para gerenciamento
-de alunos. A aplicação permite realizar operações de **CRUD (Create,
-Read, Update, Delete)** através de endpoints HTTP.
+API REST desenvolvida em **Node.js** para gerenciamento de alunos. A
+aplicação permite realizar operações de **CRUD (Create, Read, Update,
+Delete)** através de endpoints HTTP, podendo ser consumida por
+aplicações web, mobile ou outros serviços.
 
-Este projeto foi desenvolvido com foco em aprendizado de
-**desenvolvimento backend**, organização de código e construção de
-**APIs RESTful**.
-
----
-
-# 🚀 Tecnologias Utilizadas
-
-**Backend** - Node.js - Express - JavaScript (ES6)
-
-**Ferramentas** - dotenv - ESLint - REST API
+Este projeto foi criado com foco em aprendizado de **arquitetura de APIs
+REST**, organização de backend e boas práticas de desenvolvimento.
 
 ---
 
-# 📂 Estrutura do Projeto
+# 📌 Overview
+
+A API permite:
+
+- Cadastro de alunos
+- Consulta de alunos
+- Atualização de dados
+- Remoção de registros
+- Integração com aplicações frontend
+
+O sistema segue uma estrutura organizada para facilitar manutenção e
+escalabilidade.
+
+---
+
+# 🚀 Technologies
+
+Backend:
+
+- Node.js
+- Express
+- JavaScript (ES6)
+
+Ferramentas:
+
+- dotenv
+- ESLint
+- REST API
+
+---
+
+# 📂 Project Structure
 
     apiRest
     │
@@ -42,37 +65,31 @@ Este projeto foi desenvolvido com foco em aprendizado de
 
 ---
 
-# ⚙️ Instalação
+# ⚙️ Installation
 
-## 1. Clonar o repositório
+Clone o repositório:
 
 ```bash
 git clone https://github.com/seu-usuario/api-alunos.git
 ```
 
-## 2. Entrar na pasta do projeto
+Entre na pasta do projeto:
 
 ```bash
 cd api-alunos
 ```
 
-## 3. Instalar dependências
+Instale as dependências:
 
 ```bash
 npm install
 ```
 
-## 4. Configurar variáveis de ambiente
+---
 
-Crie um arquivo `.env`:
+# ▶️ Running the Project
 
-    PORT=3000
-    DB_HOST=localhost
-    DB_USER=root
-    DB_PASSWORD=senha
-    DB_NAME=alunos
-
-## 5. Executar o projeto
+Inicie o servidor:
 
 ```bash
 npm start
@@ -84,15 +101,19 @@ ou
 node server.js
 ```
 
+A API estará disponível em:
+
+    http://localhost:3000
+
 ---
 
-# 🌐 Endpoints da API
+# 🌐 API Endpoints
 
-## Criar aluno
+### Criar aluno
 
     POST /alunos
 
-Body:
+Body exemplo:
 
 ```json
 {
@@ -105,73 +126,45 @@ Body:
 
 ---
 
-## Listar alunos
+### Listar alunos
 
     GET /alunos
 
 ---
 
-## Buscar aluno por ID
+### Buscar aluno por ID
 
     GET /alunos/:id
 
 ---
 
-## Atualizar aluno
+### Atualizar aluno
 
     PUT /alunos/:id
 
 ---
 
-## Remover aluno
+### Remover aluno
 
     DELETE /alunos/:id
 
 ---
 
-# 🏗️ Arquitetura
+# 📦 Example Request
 
-O projeto segue uma estrutura baseada em **separação de
-responsabilidades**:
-
-### Controllers
-
-Responsáveis por processar as requisições e regras de negócio.
-
-    src/controllers
-
-### Models
-
-Representam as entidades e estrutura de dados.
-
-    src/models
-
-### Routes
-
-Definem os endpoints da API.
-
-    src/routes
-
-### Config
-
-Responsável por configurações da aplicação, como conexão com banco de
-dados.
-
-    src/config
-
----
-
-# 📦 Exemplo de consumo da API
+Exemplo utilizando fetch:
 
 ```javascript
 fetch("http://localhost:3000/alunos")
-  .then((res) => res.json())
+  .then((response) => response.json())
   .then((data) => console.log(data));
 ```
 
 ---
 
-# 📄 Licença
+# 👨‍💻 Author
 
-Projeto criado para fins educacionais e aprendizado em desenvolvimento
-backend com Node.js.
+Henrique Tamashiro
+
+LinkedIn: https://linkedin.com/in/henrique-tamashiro\
+GitHub: https://github.com/HenriqueTamashiro
